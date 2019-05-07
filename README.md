@@ -29,15 +29,15 @@ counter_app (repository)
 
 ## Time Estimation to Complete
 ```
-Number and name of feature: ___
+Number and name of feature: Create Counter App
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 60min
 
-Start time: _____
+Start time: 0830
 
-Finish time: _____
+Finish time: 0930
 
-Actual time needed to complete: ____
+Actual time needed to complete: 60mins
 ```
 
 ## Credits:
