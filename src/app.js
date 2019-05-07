@@ -15,28 +15,32 @@ class Counter extends React.Component {
     super(props);
 
     this.state = {
+      clicks: 0,
       count: 0
     }
   }
 
   handleAdd = e => {
     e.preventDefault();
+    let clicks = this.state.clicks + 1;
+    let count = this.state.count + 1;
 
-    this.setState({ count: this.state.count + 1 });
+    this.setState({ clicks, count });
   }
 
   handleSub = e => {
     e.preventDefault();
+    let clicks = this.state.clicks + 1;
+    let count = this.state.count - 1;
 
-    if (this.state.count > 0) {
-      this.setState({ count: this.state.count - 1 });
-    }
+    this.setState({ clicks, count});
   }
 
   render() {
     return (
       <section>
-        <p>{ this.state.count }</p>
+        <p>Number of clicks: { this.state.clicks }</p>
+        <h3>Current count: { this.state.count }</h3>
         <button onClick={ this.handleAdd }>+</button>
         <button onClick={ this.handleSub }>-</button>
       </section>
